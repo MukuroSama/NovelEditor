@@ -4,42 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>novel editor</title>
-
-    <style>
-        html{
-            height: 100%;
-        }
-        body{
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        .novel_editor_box{
-            width:100%;
-            height:100%;
-            background: url(assets/image/novel_paper_bg.png) no-repeat;
-            background-size: 100% 100%;
-
-        }
-        .novel_editor_box .novel_editor{
-            margin: 5% 5%;
-            background: transparent;
-            border: none;
-            resize: none;
-            width: 89%;
-            height: 89%;
-            outline:none;
-            line-height: 25px;
-            color: rgba(0,0,0,0.85);
-            fill: rgba(0,0,0,0.85);
-            font-size: 15px;
-            font-family: '黑体',sans-serif;
-        }
-    </style>
+    <link href="assets/style/editor.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="novel_editor_box">
-    <textarea class="novel_editor" spellcheck="false"></textarea>
+    <textarea id="editor" class="novel_editor" spellcheck="false"></textarea>
+    <div class="word_counter_wrap">
+        <h1 class="pull_right"><span id="word_counter">0</span>字</h1>
+    </div>
 </div>
+<script src="assets/js/jquery-3.2.0.min.js"></script>
+<script src="assets/js/editor.js"></script>
 </body>
 </html>
