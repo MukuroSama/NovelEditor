@@ -35,7 +35,8 @@ body{
     height: 30px;
 }
 .word_counter_wrap h1{
-    font-size: 0.80rem;
+	font-family: '微软雅黑',sans-serif;
+    font-size: 0.66rem;
     font-weight: 400;
     position: absolute;
     top: 0px;
