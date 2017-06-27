@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>小说编辑器 by kiyoma</title>
+    <title>editor</title>
     <link href="assets/style/editor.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="novel_editor_box">
-    <textarea id="editor" class="novel_editor" spellcheck="false"></textarea>
-    <div class="word_counter_wrap">
-        <h1 class="pull_right"><span id="word_counter">0</span>字</h1>
-    </div>
+	<div class="editor_wrap">
+		<textarea id="editor" class="novel_editor" spellcheck="false"></textarea>
+		<div class="bottom_bar">
+			<div class="word_counter_wrap"><span id="word_counter">0</span>字</div>
+		</div>
+	</div>
 </div>
 <script src="assets/js/jquery-3.2.0.min.js"></script>
 <script src="assets/js/editor.js"></script>
